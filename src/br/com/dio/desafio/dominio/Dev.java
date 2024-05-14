@@ -36,6 +36,10 @@ public class Dev {
         return soma;
 
     }
+
+    public void imprimeConteudosInscritos(String nome, Set<Conteudo> conteudoInscritos){
+        System.out.println("Conteúdos Inscritos " + nome + " " + conteudoInscritos);
+    }
     public String getNome() {
         return nome;
     }
