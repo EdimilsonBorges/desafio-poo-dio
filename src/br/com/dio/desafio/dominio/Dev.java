@@ -15,7 +15,6 @@ public class Dev {
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
         bootcamp.getDevsInscritos().add(this);
     }
-
     public void progredir() {
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
         if(conteudo.isPresent()) {
@@ -37,28 +36,15 @@ public class Dev {
 
     }
 
-    public void imprimeConteudosInscritos(String nome, Set<Conteudo> conteudoInscritos){
-        System.out.println("Conteúdos Inscritos " + nome + " " + conteudoInscritos);
+    public void imprimeConteudosInscritos(){
+        System.out.println("Conteúdos Inscritos " + nome + " " + conteudosInscritos);
+    }
+
+    public void imprimeConteudosConcluidos(){
+        System.out.println("Conteúdos Concluídos " + nome + " " + conteudosConcluidos);
     }
     public String getNome() {
         return nome;
-    }
-
-
-    public Set<Conteudo> getConteudosInscritos() {
-        return conteudosInscritos;
-    }
-
-    public void setConteudosInscritos(Set<Conteudo> conteudosInscritos) {
-        this.conteudosInscritos = conteudosInscritos;
-    }
-
-    public Set<Conteudo> getConteudosConcluidos() {
-        return conteudosConcluidos;
-    }
-
-    public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos) {
-        this.conteudosConcluidos = conteudosConcluidos;
     }
 
     @Override

@@ -17,25 +17,25 @@ public class Main {
 
         Dev devCamila = new Dev("Camila");
         devCamila.inscreverBootcamp(bootcamp);
-        devCamila.imprimeConteudosInscritos(devCamila.getNome(),devCamila.getConteudosInscritos());
+        devCamila.imprimeConteudosInscritos();
         devCamila.progredir();
         devCamila.progredir();
         System.out.println("-");
-        devCamila.imprimeConteudosInscritos(devCamila.getNome(),devCamila.getConteudosInscritos());
-        devCamila.imprimeConteudosInscritos(devCamila.getNome(),devCamila.getConteudosInscritos());
+        devCamila.imprimeConteudosInscritos();
+        devCamila.imprimeConteudosInscritos();
         System.out.println("XP:" + devCamila.calcularTotalXp());
 
         System.out.println("-------");
 
         Dev devJoao = new Dev("Joao");
         devJoao.inscreverBootcamp(bootcamp);
-        devJoao.imprimeConteudosInscritos(devJoao.getNome(),devJoao.getConteudosInscritos());
+        devJoao.imprimeConteudosInscritos();
         devJoao.progredir();
         devJoao.progredir();
         devJoao.progredir();
         System.out.println("-");
-        devJoao.imprimeConteudosInscritos(devJoao.getNome(),devJoao.getConteudosInscritos());
-        devJoao.imprimeConteudosInscritos(devJoao.getNome(),devJoao.getConteudosInscritos());
+        devJoao.imprimeConteudosInscritos();
+        devJoao.imprimeConteudosInscritos();
         System.out.println("XP:" + devJoao.calcularTotalXp());
     }
 

@@ -15,16 +15,11 @@ public class Curso extends Conteudo{
 
     }
 
-
-    public int getCargaHoraria() {
-        return cargaHoraria;
-    }
-
     @Override
     public String toString() {
         return "Curso{" +
-                "titulo='" + getTitulo() + '\'' +
-                ", descricao='" + getDescricao() + '\'' +
+                "titulo='" + getTitulo() +
+                ", descricao='" + getDescricao() +
                 ", cargaHoraria=" + cargaHoraria +
                 '}';
     }
